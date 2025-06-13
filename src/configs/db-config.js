@@ -3,7 +3,10 @@ const config = {
     host: 'localhost',
     database: 'tp',
     password: 'root',
-    port: 9302,
+    port: 5432,
     };
     
 export default config;
+
+
+  
