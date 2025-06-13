@@ -17,7 +17,7 @@ app.get('/api/alumnos', async (req,res)=>{
     try {
         let sql = "SELECT * FROM Alumnos";
         const result = await client.query(sql);
-        res.status(200).send(result.rows[0]);
+        res.status(200).send(result.rows);
       } catch (err) {
         console.error(err);
         res.status(500).send("Error en la consulta");
